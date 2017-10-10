@@ -1,0 +1,236 @@
+.btn1{
+	padding:15px;
+	
+	color:#138D75;
+	border:1px solid lightgrey; 
+	width:150px;
+	font-size:20px;
+	outline:none;
+	
+	
+}
+
+.btn1:hover{
+	background-color:#EAFAF1;
+	
+	
+}
+
+.btn1:active{
+	background-color:#66A680;
+	border:none;
+	outline:none
+	
+}
+
+td.active {
+    background-color:#A9DFBF;
+	color:#0B5345;
+}
+
+
+.msg1{
+	font-size:20px;
+	margin:00px;
+	padding:00px;
+	color:black;
+	
+}
+
+
+
+.header{
+	background-color: #16A085;
+	overflow: hidden;
+    position: fixed;
+    width:100%;
+    top:0;
+    opacity: 0.9;
+    padding:10px;
+	border-bottom:3px solid #138D75;
+	z-index:10;
+}
+
+textarea{
+    background: url(http://i.imgur.com/2cOaJ.png);
+	background-attachment: local;
+	background-repeat: no-repeat;
+	padding-left: 35px;
+	padding-top: 10px;
+    border-color:#ccc;
+	font-size:105%;
+}
+
+
+.searchinput {
+	width:350px;
+	margin:30px 0 20px 0;
+	padding:5px;
+	border-style: inset hidden inset inset;
+	border-top: 1px inset #EBE9ED;
+	border-left: 1px inset #EBE9ED;
+	border-right: none;
+	border-bottom: 1px inset #EBE9ED;
+}
+
+.separator {
+	height:1px;
+	background-color:#D5DBDB;
+	margin:20px ;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 0px solid #ccc;
+    border-top: none;
+	margin:30px 10%;
+}
+
+
+table, th, td {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+}
+
+#foodsubmenu td {
+	padding: 10px  20px;
+	border: 1px solid lightgrey;
+}
+
+#foodsubmenu td:hover {
+	background-color:#EAFAF1;
+}
+
+
+.username {
+	color:white;
+	padding:10px;
+	font-weight:bold;
+	font-size:150%;
+	position:absolute;
+	right:0;
+	width:200px;
+	top:0; 
+	text-align:center;
+	cursor: pointer;
+	
+}
+
+.username:hover{
+	background-color:#58D68D;
+}
+
+#usernamelist li {
+	list-style: none;
+	padding:10px;
+	background-color:white;
+	border-bottom:1px inset lightgrey; 
+	color:black;
+}
+
+
+
+#foodappertizertable {
+	width:100%;
+	min-width:500px;
+}
+
+#foodappertizertable img {
+	width:100%;
+}
+
+#foodappertizertable tr td:first-child  {
+	padding: 0;
+	width:20%;
+	min-width:150px;
+}
+
+#foodappertizertable tr td:last-child  {
+	padding: 0;
+	width:22%;
+	vertical-align:top;
+	text-align:center;
+	min-width:150px;
+	
+}
+
+#foodappertizertable .pic{
+	font-weight:bold;
+	font-size:120%;
+	padding:10px;
+	
+}
+
+#foodappertizertable a {
+	font-weight:bold;
+	text-decoration:none;
+	color:#21618C;
+	
+	
+}
+#foodappertizertable a:hover {
+	color:#1B4F72;
+	text-decoration:underline;
+}
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+	border: none;
+	text-align:center;
+	margin: 0 auto;
+
+	width:158px;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

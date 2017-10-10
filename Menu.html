@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Directory</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="margin:0px">
+<div class="header">
+	<span style="margin:20px;color:white;padding:20px;font-weight:bold;font-size:150%;height:100%">Menu</span>
+	<span class="username" id="usernamemenu">
+	Username
+	</span>
+	
+	
+</div>
+
+<div style="width:100%; text-align:center; margin-top:30px;padding:20px">
+	<input type="text" class="searchinput" placeholder="Search my food here..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search my food here...'"><button ><i class="fa fa-search" style="color:grey;padding:7px;"></i></button>
+	<br>
+	<table align="center">
+		<tbody>
+			<tr>
+				<td class="btn1 active" onclick="opentab(event, 'food')">
+				Food
+				</td>
+				<td class="btn1" onclick="opentab(event, 'beverage')">
+				Beverage
+				</td>
+				<td class="btn1" onclick="opentab(event, 'others')">
+				Others
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+</div>
+
+<div class="separator"></div>
+
+<div id="food" class="tabcontent" style="display:block">
+	<table id="foodsubmenu">
+		<tbody>
+			<tr>
+				<td style="background-color:#A9DFBF;color:#0B5345">
+				Appetizer
+				</td>
+				<td>
+				Soup
+				</td>
+				<td>
+				Main Course
+				</td>
+				<td>
+				Dessert
+				</td>
+			</tr>
+		</tbody>
+	</table>
+  <h3>Foods</h3>
+  <p>London is the capital city of England.</p>
+  <table id="foodappertizertable">
+	<tbody>
+		<tr>
+			<td>
+				<div class="pic">Egg Salad</div>
+				<img src="https://i.pinimg.com/736x/2a/c8/e7/2ac8e7f4daa2f70499ab5ed5de39ce9a--canape-food-canapes-recipes.jpg">
+			</td>
+			<td>
+			
+			</td>
+			<td><div class="pic">Rating & Comment</div>
+				<div style="margin:0 auto; width:90%;position:relative;">
+					<fieldset class="rating">
+						<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+						<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+						<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+						<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+						<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+						<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+						<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+						<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+						<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+						<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+						210 Review
+					</fieldset>
+					
+					</div>
+					<div style="width:100%;text-align:left;padding:0 10px 10px 10px;">
+					<div style="text-align:left;width:100%;margin:5px;font-size:90%;text-decoration:;">130 Comment</div>
+					<span><a href="#">Michelle</a>: Nice!</span><br>
+					<span><a href="#">Michale</a>: Tasty!</span><br>
+					<span><a href="#">Stephen</a>: Wow!</span><br>
+					<span><a href="#">Nicole</a>: It is Impressive!</span><br>
+					</div>
+				
+			</td>
+		</tr>
+		<tr>
+			<td> <div class="pic">Garden Salad</div>
+				<img src="http://ghk.h-cdn.co/assets/cm/15/11/54fe2fec48589-layered-white-bean-tomato-dip-recipe-ghk1211-xl.jpg">
+			</td>
+			<td>
+			
+			</td>
+			<td>
+				<div class="pic">Rating & Comment</div>
+				<div style="margin:0 auto; width:90%;position:relative;">
+					<fieldset class="rating">
+						<input type="radio" id="2star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+						<input type="radio" id="2star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+						<input type="radio" id="2star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+						<input type="radio" id="2star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+						<input type="radio" id="2star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+						<input type="radio" id="2star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+						<input type="radio" id="2star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+						<input type="radio" id="2star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+						<input type="radio" id="2star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+						<input type="radio" id="2starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+						210 Review
+					</fieldset>
+					
+					</div>
+					<div style="width:100%;text-align:left;padding:0 10px 10px 10px;">
+					<div style="text-align:left;width:100%;margin:5px;font-size:90%;text-decoration:;">130 Comment</div>
+					<span><a href="#">Michelle</a>: Nice!</span><br>
+					<span><a href="#">Michale</a>: Tasty!</span><br>
+					<span><a href="#">Stephen</a>: Wow!</span><br>
+					<span><a href="#">Nicole</a>: It's Impressive!</span><br>
+					</div>
+			</td>
+		</tr>
+		<tr>
+			<td> <div class="pic">Mushroom Soup</div>
+				<img src="http://images.meredith.com/bhg/images/recipe/550_RU157597.jpg">
+			</td>
+			<td>
+			
+			</td>
+			<td>
+				<div class="pic">Rating & Comment</div>
+				<div style="margin:0 auto; width:90%;position:relative;">
+					<fieldset class="rating">
+						<input type="radio" id="3star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+						<input type="radio" id="3star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+						<input type="radio" id="3star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+						<input type="radio" id="3star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+						<input type="radio" id="3star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+						<input type="radio" id="3star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+						<input type="radio" id="3star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+						<input type="radio" id="3star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+						<input type="radio" id="3star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+						<input type="radio" id="3starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+						210 Review
+					</fieldset>
+					
+					</div>
+					<div style="width:100%;text-align:left;padding:0 10px 10px 10px;">
+					<div style="text-align:left;width:100%;margin:5px;font-size:90%;text-decoration:;">130 Comment</div>
+					<span><a href="#">Michelle</a>: Nice!</span><br>
+					<span><a href="#">Michale</a>: Tasty!</span><br>
+					<span><a href="#">Stephen</a>: Wow!</span><br>
+					<span><a href="#">Nicole</a>: Impressive!</span><br>
+					</div>
+			</td>
+		</tr>
+		<tr>
+			<td><div class="pic">Lobster Sald</div>
+				<img src="https://www.metro.ca/userfiles/image/recipes/salade-homard-vinaigrette-asiatique-5260.jpg">
+			</td>
+			<td>
+			
+			</td>
+			<td>
+				<div class="pic">Rating & Comment</div>
+				<div style="margin:0 auto; width:90%;position:relative;">
+					<fieldset class="rating">
+						<input type="radio" id="4star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+						<input type="radio" id="4star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+						<input type="radio" id="4star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+						<input type="radio" id="4star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+						<input type="radio" id="4star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+						<input type="radio" id="4star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+						<input type="radio" id="4star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+						<input type="radio" id="4star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+						<input type="radio" id="4star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+						<input type="radio" id="4starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+						210 Review
+					</fieldset>
+					
+					</div>
+					<div style="width:100%;text-align:left;padding:0 10px 10px 10px;">
+					<div style="text-align:left;width:100%;margin:5px;font-size:90%;text-decoration:;">130 Comment</div>
+					<span><a href="#">Michelle</a>: Nice!</span><br>
+					<span><a href="#">Michale</a>: Tasty!</span><br>
+					<span><a href="#">Stephen</a>: Wow!</span><br>
+					<span><a href="#">Nicole</a>: Impressive!</span><br>
+					</div>
+			</td>
+		</tr>
+		<tr>
+			<td><div class="pic">Egg Mayo with Lobster</div>
+				<img src="http://cdn.shopify.com/s/files/1/0717/1537/products/28_Lobster_Salad_f03dbc7c-82f9-4d72-92b9-dd571a6335b4_grande.jpg?v=1419388498">
+			</td>
+			<td>
+			
+			</td>
+			<td>
+				<div class="pic">Rating & Comment</div>
+				<div style="margin:0 auto; width:90%;position:relative;">
+					<fieldset class="rating">
+						<input type="radio" id="5star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+						<input type="radio" id="5star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+						<input type="radio" id="5star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+						<input type="radio" id="5star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+						<input type="radio" id="5star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+						<input type="radio" id="5star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+						<input type="radio" id="5star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+						<input type="radio" id="5star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+						<input type="radio" id="5star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+						<input type="radio" id="5starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+						210 Review
+					</fieldset>
+					
+					</div>
+					<div style="width:100%;text-align:left;padding:0 10px 10px 10px;">
+					<div style="text-align:left;width:100%;margin:5px;font-size:90%;text-decoration:;">130 Comment</div>
+					<span><a href="#">Michelle</a>: Nice!</span><br>
+					<span><a href="#">Michale</a>: Tasty!</span><br>
+					<span><a href="#">Stephen</a>: Wow!</span><br>
+					<span><a href="#">Nicole</a>: Impressive!</span><br>
+					</div>
+			</td>
+		</tr>
+	</tbody>
+  </table>
+</div>
+
+<div id="beverage" class="tabcontent">
+  <h3>Beverage</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="others" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Others is the capital of Japan.</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+
+<script language="javascript" type ="text/javascript" src="script.js">
+</script>
+
+</body>
+</html>
